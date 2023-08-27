@@ -14,14 +14,13 @@
 
 
     <script>
-        var n1 = document.getElementById('txtn1').value;
-        var n2 = Number((document.getElementById('txtn2')).value);
-        var res = document.getElementById("resultado");
-
-        function somar(){
-            res.innerHTML = n1;
+          
+          function somar(){
+            var n1 = Number(document.getElementById('txtn1').value);
+            var n2 = Number(document.getElementById('txtn2').value);
+            var res = document.getElementById("resultado");
+            res.innerText = n1 + n2;
         }
-
 
     </script>
 </body>
